@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Counter in JavaScript</title>
+    <style>
+        body {
+            padding: 0px 100px;
+
+        }
+
+        h1 {
+            text-align: center;
+            background-color: rgb(79, 91, 253);
+            color: white;
+            padding: 10px;
+            margin: 0px;
+        }
+
+        #textbox {
+            width: 99.3%;
+            border: 3px solid aquamarine;
+            font-size: 16px;
+        }
+
+        p {
+            text-align: center;
+            background-color: aquamarine;
+            font-size: 25px;
+            font-weight: bold;
+            padding: 10px;
+            margin: 0px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Word Counter in JavaScript</h1>
+    <textarea id="textbox" cols="30" rows="10"></textarea>
+    <p>
+        <span id="wordy">0</span> words and
+        <span id="character">0</span> characters
+
+    </p>
+
+
+
+    <script>
+
+        let textbox = document.getElementById("textbox");
+        textbox.addEventListener('input', function () {
+            let text = this.value;
+            let character = text.length;
+            document.getElementById("character").innerHTML = character;
+
+
+            //words ko rokne ke liye
+            text = text.trim();
+
+            //main down
+            let words = text.split(" ");
+            let cleanList = words.filter(function (elm) {
+                return elm != "";
+            });
+            console.log(cleanList);
+            let wordy = cleanList.length;
+            document.getElementById("wordy").innerHTML = wordy;
+
+
+
+
+
+
+
+        });
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

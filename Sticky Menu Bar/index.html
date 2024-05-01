@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Menu Bar</title>
+    <style>
+        body {
+            margin: 0px;
+
+        }
+
+        #header {
+            text-align: center;
+        }
+
+        #logo {
+            width: 250px;
+            height: 200px;
+        }
+
+        #menu-bar {
+            text-align: center;
+            background-color: rgb(28, 189, 135);
+        }
+
+        #menu-bar li {
+            display: inline-block;
+            padding: 15px 10px;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+
+        }
+
+        #container {
+            text-align: center;
+            padding: 50px 100px;
+
+        }
+
+        #container img {
+            width: 400px;
+        }
+
+        .hello {
+            position: fixed;
+            top: 0px;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <img src="https://looka.com/wp-content/themes/looka/images/logos/looka_logo_black.svg" id="logo" alt="">
+    </div>
+    <nav id="menu-bar">
+        <li>Home</li>
+        <li>About us</li>
+        <li>Our team</li>
+        <li>Client </li>
+        <li>Help</li>
+    </nav>
+    <div id="container">
+        <h1>About us</h1>
+        <img src="https://cdn.pixabay.com/photo/2023/12/09/10/10/woman-8439003_1280.png" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, consequuntur eveniet voluptatum voluptatibus
+            velit ducimus eum sunt modi repudiandae numquam libero distinctio in ipsa vel ex, totam iusto incidunt
+            repellat. Nulla, culpa? Explicabo temporibus odio error laudantium maxime quos unde ea eligendi est! Nihil
+            doloribus vitae reiciendis iste, aut eos repudiandae voluptas tenetur placeat nostrum id ut exercitationem
+            autem rerum cum omnis quis hic dignissimos modi facere, possimus praesentium ad. Quibusdam dignissimos eum
+            consequatur architecto voluptas earum delectus? Aperiam, iusto facilis. Dolorum excepturi harum, doloribus
+            eum ut nesciunt placeat temporibus necessitatibus quaerat repellendus sit quo, consequuntur commodi, omnis
+            ducimus provident. Magnam, eveniet amet labore nesciunt quibusdam veniam voluptas dolore sunt ullam impedit
+            consequatur dolores aspernatur, illum omnis ratione debitis repellendus atque. Molestiae in perferendis
+            omnis placeat! Ut illum, nam quaerat, placeat sint et expedita aperiam modi recusandae tempora ratione
+            quisquam? Quo velit nemo aperiam voluptate labore eligendi ducimus! Tempora enim expedita similique, nulla
+            sapiente a quo dolore aperiam quod! Earum doloremque maxime blanditiis voluptate provident totam, veniam
+            quam ducimus cumque ipsa odit beatae nulla architecto natus a iste pariatur labore! Impedit, quibusdam
+            laudantium. Perspiciatis delectus, asperiores deleniti nobis ullam iusto ex atque voluptas non laudantium
+            quam corrupti. Repudiandae distinctio delectus reprehenderit error est nihil iusto. Eaque distinctio, quas
+            mollitia officia tempora quaerat quasi ut illo sunt ratione architecto maiores perferendis possimus tempore
+            adipisci optio quisquam id quos enim molestias fugit excepturi fuga. Esse impedit commodi perferendis vero
+            ex ipsam. Earum iure eos maxime aliquam doloribus dolorum, expedita rerum sed dolor rem tenetur suscipit
+            nemo perspiciatis ducimus nam explicabo voluptates eveniet. Placeat similique, exercitationem beatae
+            nesciunt natus eos autem! Sit accusamus maiores consequuntur velit facilis, quam facere, non, cum numquam ea
+            ratione voluptas eius quod ducimus? Similique, laboriosam quo, molestiae corporis recusandae ipsum dolorum
+            dolores dolor quasi exercitationem autem amet temporibus doloremque? In perferendis maiores aperiam enim
+            possimus voluptatibus ipsa quibusdam ipsum neque temporibus, minima dolor eos ducimus nostrum recusandae
+            cupiditate voluptates doloribus ea! Placeat maxime doloremque ratione facere, mollitia soluta, tenetur
+            delectus sint fuga provident voluptas ipsa hic! Aspernatur, adipisci accusamus maiores vitae nemo animi.
+            Fugit repellat laudantium velit corporis nisi accusamus iste excepturi temporibus soluta reprehenderit
+            voluptas incidunt dolorem architecto veniam doloribus voluptates nemo odio commodi, voluptatum ipsa maxime
+            consequuntur! Laudantium sunt officiis fuga delectus, voluptates tempora ducimus modi odit. Quidem, animi
+            praesentium perferendis ratione reiciendis aliquam ducimus totam dolore aut dolor ab nisi dolores, inventore
+            itaque? Atque dolor repellendus repellat tempore ex libero omnis voluptatem corrupti fuga aliquam, ipsam
+            quidem optio dicta, fugit sequi ipsa sit a, cumque dolorum accusamus illo vero laudantium porro illum? Quas
+            deleniti voluptates beatae itaque distinctio harum dolorum incidunt temporibus, blanditiis nihil labore et
+            voluptate dolorem deserunt, consectetur eius at corrupti perferendis velit necessitatibus illo nemo sunt
+            atque. Architecto molestias error pariatur quam recusandae ipsam sit inventore itaque blanditiis consectetur
+            natus iste ullam, veniam beatae voluptatem quia alias eius cupiditate omnis esse veritatis iusto. Excepturi
+            ullam adipisci officiis tenetur ad, laudantium sit optio facere veritatis, ex, a possimus rem! Optio
+            necessitatibus labore quaerat!
+        </p>
+    </div>
+
+    <script>
+
+        window.addEventListener("scroll", function () {
+            let navbar = document.getElementById("menu-bar")
+            if (window.pageYOffset >= 210) {
+                navbar.classList.add("hello");
+            } else {
+                navbar.classList.remove("hello");
+            }
+        });
+
+
+    </script>
+</body>
+
+</html>
